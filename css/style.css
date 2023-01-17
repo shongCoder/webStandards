@@ -749,7 +749,7 @@
 /* 갤러리 */
 .gallery {
     border: 1px solid #ccc;
-    height: 254px;
+    height: 260px;
     position: relative;
     overflow: hidden;
 }
@@ -766,7 +766,7 @@
     top: 7px;
 }
 .gallery .gallery_btn ul {
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .gallery .gallery_btn li {
     float: left;
@@ -805,6 +805,41 @@
 .gallery .gallery_img img {
     width: 100%;
 }
+
+/* 슬릭 갤러리 */
+.gallery .gallery_btn button{
+    float: left;
+    margin: 1px 2px;
+    display: block;
+    width: 23px;
+    height: 23px;
+    background: url(../img/icon.png) no-repeat;
+}
+.gallery .gallery_btn .gb_icon1{
+    background-position: -150px -120px;
+}
+.gallery .gallery_btn .gb_icon2{
+    background-position: -150px -143px;
+}
+.gallery .gallery_btn .gb_icon3{
+    background-position: -150px -166px;
+}
+.gallery .gallery_btn .gb_icon4{
+    background-position: -150px -189px;
+}
+.gallery .gallery_btn .gb_icon1:hover{
+    background-position: -173px -120px;
+}
+.gallery .gallery_btn .gb_icon2:hover{
+    background-position: -173px -143px;
+}
+.gallery .gallery_btn .gb_icon3:hover{
+    background-position: -173px -166px;
+}
+.gallery .gallery_btn .gb_icon4:hover{
+    background-position: -173px -189px;
+}
+
 
 /* 로그인 */
 
