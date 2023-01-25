@@ -1,3 +1,23 @@
+
+
+//윈도우 팝업
+$(".window").click(function(e){
+    e.preventDefault();
+    window.open("popup.html","popup01","width=800, heigth=590, left=50, tpo=50 scrollbars=0, toolbar=0, menumar=0")
+});
+
+//레이어 팝업
+$(".layer").click(function(e){
+    e.preventDefault();
+    //$("#layer").css("display","block");
+    $("#layer").slideDown();
+});
+
+$("#layer .close").click(function(e){
+    e.preventDefault();
+    $("#layer").slideUp();
+});
+
 //탭메뉴
 var $tab_list = $(".tab_menu");
 

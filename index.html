@@ -7,8 +7,13 @@
     <!--CSS style-->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <!--slick css-->
     <link rel="stylesheet" href="css/slick.css">
+    <!--lightGallery css-->
+    <link rel="stylesheet" href="css/lightgallery.css">
+    <link rel="stylesheet" href="css/lg-zoom.css" />
+    <link rel="stylesheet" href="css/lg-thumbnail.css" />
 
     <!--웹 폰트-->
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
@@ -17,7 +22,7 @@
 </head>
 <body>
             <!--스킵 내비게이션-->
-    <div id="skip">
+    <div id="skip">ㅌ
         <a href="#cont_nav">전체 메뉴 바로가기</a>
         <a href="#cont_ban">배너 영역 바로가기</a>
         <a href="#cont_cont">컨텐츠 영역 바로가기</a>
@@ -315,9 +320,11 @@
                             <div class="popup">
                                 <h4>Advertisement</h4>
                                 <ul>
-                                    <li><a href="#"><img src="img/sban07.jpg" alt="이미지1"></a></li>
-                                    <li><a href="#"><img src="img/sban08.jpg" alt="이미지2"></a></li>
-                                    <li class="last"><a href="#"><img src="img/sban09.jpg" alt="이미지3"></a></li>
+                                    <li class="layer"><a href="#"><img src="img/sban07.jpg" alt="이미지1"></a></li>
+                                    <li class="window"><a href="#"><img src="img/sban08.jpg" alt="이미지2"></a></li>
+                                    <li class="last lightgallery">
+                                        <a href="img/webstandard3.jpg"><img src="img/sban09.jpg" alt="이미지3"></a>
+                                    </li>
                                 </ul>
                             </div>
                             <!--//팝업-->
@@ -497,11 +504,19 @@
         <!--//footer-->
     </div>
     <!--//wrap-->
+
+    <!--layer popup-->
+    <div id="layer">
+        <img src="img/webstandard1.jpg" alt="웹표준 사이트">
+        <a href="#" class="close">Close</a>
+    </div>
+    <!--//layer popup-->
     
     <!--script-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!--slick js-->
     <script src="js/slick.min.js"></script>
+    <script src="js/lightgallery.umd.js"></script>
     <script src="js/script.js"></script>
 
 </body>
